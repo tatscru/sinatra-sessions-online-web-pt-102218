@@ -24,7 +24,7 @@ class App < Sinatra::Base
     #   redirect '/fetch'
     # else
     #   "Session value has not been set!"
-    end
+    # end
   end
 
   get '/fetch' do
