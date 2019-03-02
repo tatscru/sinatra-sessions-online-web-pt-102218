@@ -20,6 +20,7 @@ class App < Sinatra::Base
 
   get '/set' do
     session[:foo] = 'hello'
+    # single equals, otherwise the following will not run
     if session[:foo] == 'hello'
       redirect '/fetch'
     else
